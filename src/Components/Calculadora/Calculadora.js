@@ -15,6 +15,7 @@ export default function Calculadora(){
     }
     return(
         <div>
+            <h1>Calculadora de IVA</h1>
             <label htmlFor='monto'>Ingresa el monto:</label>
             <input id='monto' name='monto' type="number" onChange={calculateIva} />
             <label>El iva es: {monto !== 0 ? monto : undefined}</label>
