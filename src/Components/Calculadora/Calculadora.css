@@ -57,3 +57,9 @@ input::-webkit-inner-spin-button {
         white-space: pre-wrap;
     }
 }
+.displayme{
+    display: flex;
+}
+.dontdisplayme{
+    display: none;
+}
