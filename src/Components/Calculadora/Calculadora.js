@@ -6,7 +6,8 @@ import './Calculadora.css'
 export default function Calculadora(){
     return(
         <div>
-            <input type="number" />
+            <label htmlFor='monto'>Ingresa el monto:</label>
+            <input id='monto' name='monto' type="number" />
         </div>
     )
 }
