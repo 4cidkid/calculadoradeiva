@@ -43,3 +43,17 @@ input::-webkit-inner-spin-button {
   align-items: center;
   gap: 10px;
 }
+@media only screen and (max-width: 320px){
+    .calculadora-container{
+        max-width: 100%;
+    }
+    .monto-container{
+        flex-direction: column;
+    }
+    .result{
+        flex-direction: column;
+    }
+    .result h2{
+        white-space: pre-wrap;
+    }
+}
