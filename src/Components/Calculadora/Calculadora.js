@@ -6,6 +6,9 @@ export default function Calculadora() {
   const [finalPrice, setfinalPrice] = useState(0);
   function validateInput(e){
     e.target.value = e.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+    if(e.target.value.length > 16){
+        e.target.value = 0;
+    }
   }
   function calculateIva(e) {
       if(e.target.value<0){
@@ -37,11 +40,11 @@ export default function Calculadora() {
         </div>
         <div className="result">
           <label>El iva es:</label>
-          <h2 style={{margin: '0px'}} >{monto}</h2>
+          <h2 style={{margin: '0px'}} >${monto}</h2>
         </div>
         <div className="result">
           <label>El precio final es:</label>
-          <h2 style={{margin: '0px'}} >{finalPrice}</h2>
+          <h2 style={{margin: '0px'}} >${finalPrice}</h2>
         </div>
       </div>
     </div>
